@@ -18,6 +18,12 @@ class TestStringCalculator(unittest.TestCase):
         result = calculator.Add("2\n3\n\n4")
         self.assertEqual(result, 9)
 
+    def test_multiple_delims_in_same_input_are_supported(self):
+        result = calculator.Add("1\n2,3")
+        self.assertEqual(result, 6)
+        
+        
+
     
         
         
