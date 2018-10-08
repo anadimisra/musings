@@ -1,6 +1,7 @@
 import unittest
 import calculator
 class TestStringCalculator(unittest.TestCase):
+
     def test_method_takes_0_numbers(self):
         result = calculator.Add("")
         self.assertEqual(result, 0)
