@@ -1,4 +1,5 @@
 import unittest
+from calculator import NegativeNumberException
 import calculator
 class TestStringCalculator(unittest.TestCase):
 
@@ -38,8 +39,5 @@ class TestStringCalculator(unittest.TestCase):
         with self.assertRaises(NegativeNumberException):
             calculator.Add('1,-1,2')
  
-    
-        
-        
 if __name__ == '__main__':
     unittest.main()

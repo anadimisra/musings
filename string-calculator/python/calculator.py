@@ -10,3 +10,6 @@ def Add(input):
 def get_int(str):
     s = str.strip()
     return int(s) if s else 0
+
+class NegativeNumberException(Exception):
+    pass

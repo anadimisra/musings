@@ -10,3 +10,5 @@ This is from an early foray into Python so including references.
 1. [String `split`](https://www.w3schools.com/python/ref_string_split.asp)
 1. [Split string with multiple delims](https://stackoverflow.com/a/1059601)
 1. [smarter str to int conversion](https://stackoverflow.com/a/2941975)
+1. [assert that an exception is raised](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises)
+1. [define custom Exceptions](https://www.programiz.com/python-programming/user-defined-exception)
