@@ -22,8 +22,22 @@ class TestStringCalculator(unittest.TestCase):
         result = calculator.Add("1\n2,3")
         self.assertEqual(result, 6)
         
-        
+    def test_method_parses_delim_specified_explicitly(self):
+        result = calculator.Add('//;\n1;2')
+        self.assertEqual(result,3)
 
+    def test_method_parses_delim_within_brackets(self):
+        result = calculator.Add('//[-]\n1-2-3')
+        self.assertEqual(result,6)
+
+    def test_method_parses_multiple_delims_within_brackets(self):
+        result = calculator.Add('//[-][%]\n1-2%3')
+        self.assertEqual(result,6)
+
+    def test_method_throws_exception_with_negative_numbers(self):
+        with self.assertRaises(NegativeNumberException):
+            calculator.Add('1,-1,2')
+ 
     
         
         
