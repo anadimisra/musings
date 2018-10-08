@@ -1,5 +1,6 @@
+import re
 def Add(input):
-    inp_array = input.split("\n")
+    inp_array = re.split('[\n,]+',input)
     result = 0
     for inp in inp_array:
         result += int(inp)
