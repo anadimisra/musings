@@ -12,3 +12,5 @@ This is from an early foray into Python so including references.
 1. [smarter str to int conversion](https://stackoverflow.com/a/2941975)
 1. [assert that an exception is raised](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises)
 1. [define custom Exceptions](https://www.programiz.com/python-programming/user-defined-exception)
+1. [run single unit test from unittest.TestCase](https://stackoverflow.com/a/15971771/682912)
+1. [string contains substring](https://stackoverflow.com/a/3437070/682912)
