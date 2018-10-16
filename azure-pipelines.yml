@@ -14,7 +14,7 @@ steps:
   workingDirectory: string-calculator/python
   displayName: 'Run String-Calculator Python Tests'
 - task: PublishTestResults@2
-    inputs:
-      testResultsFormat: 'JUnit'
-      testResultsFiles: '**/test-reports/TEST-*.xml'
-      searchFolder: 'string-calculator/python'
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test-reports/TEST-*.xml'
+    searchFolder: 'string-calculator/python'
