@@ -40,4 +40,5 @@ class TestStringCalculator(unittest.TestCase):
             calculator.Add('1,-1,2')
  
 if __name__ == '__main__':
-    unittest.main()
+    import xmlrunner
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))

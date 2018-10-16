@@ -27,7 +27,7 @@ def get_int(str):
     if s:
         try:
             if int(s) < 0:
-                raise NegativeNumberException('ssss')
+                raise NegativeNumberException('negative numbers are not allowed')
             else:
                 return int(s) 
         except ValueError:
