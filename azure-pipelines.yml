@@ -7,6 +7,9 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: python tests.py
+- script: |
+    sudo apt install -y python-pip
+    sudo pip install numpy
+    python tests.py
   workingDirectory: string-calculator/python
   displayName: 'Run String-Calculator Python Tests'
